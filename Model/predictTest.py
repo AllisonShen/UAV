@@ -8,6 +8,7 @@ from keras.preprocessing.image import img_to_array
 from matplotlib import pyplot
 from matplotlib.patches import Rectangle
 import os
+import glob
 
 class BoundBox:
 	def __init__(self, xmin, ymin, xmax, ymax, objness = None, classes = None):
@@ -171,7 +172,7 @@ def draw_boxes(filename, v_boxes, v_labels, v_scores):
 	print(f"figName: {figName}")
 	figPath = f"./outputs/{figName}"
 	pyplot.savefig(figPath)
-	pyplot.show()
+	# pyplot.show()
 
 
 # load yolov3 model
@@ -180,40 +181,83 @@ model = load_model('model.h5')
 input_w, input_h = 416, 416
 # define our new photo
 # photo_filename = 'zebra.jpg'
-photo_filename = './dataset/000.jpg'
-# load and prepare image
-image, image_w, image_h = load_image_pixels(photo_filename, (input_w, input_h))
-# make prediction
-yhat = model.predict(image)
-# summarize the shape of the list of arrays
-print([a.shape for a in yhat])
-# define the anchors
-anchors = [[116,90, 156,198, 373,326], [30,61, 62,45, 59,119], [10,13, 16,30, 33,23]]
-# define the probability threshold for detected objects
-class_threshold = 0.6
-boxes = list()
-for i in range(len(yhat)):
-	# decode the output of the network
-	boxes += decode_netout(yhat[i][0], anchors[i], class_threshold, input_h, input_w)
-# correct the sizes of the bounding boxes for the shape of the image
-correct_yolo_boxes(boxes, image_h, image_w, input_h, input_w)
-# suppress non-maximal boxes
-do_nms(boxes, 0.5)
-# define the labels
-labels = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck",
-	"boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench",
-	"bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe",
-	"backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard",
-	"sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard",
-	"tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana",
-	"apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake",
-	"chair", "sofa", "pottedplant", "bed", "diningtable", "toilet", "tvmonitor", "laptop", "mouse",
-	"remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator",
-	"book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
-# get the details of the detected objects
-v_boxes, v_labels, v_scores = get_boxes(boxes, labels, class_threshold)
-# summarize what we found
-for i in range(len(v_boxes)):
-	print(v_labels[i], v_scores[i])
-# draw what we found
-draw_boxes(photo_filename, v_boxes, v_labels, v_scores)
+
+for filename in glob.glob("./dataset/*.jpg"):
+	# print(f"input image: {filename}")
+	photo_filename = filename
+	image, image_w, image_h = load_image_pixels(photo_filename, (input_w, input_h))
+	yhat = model.predict(image)
+	print([a.shape for a in yhat])
+	anchors = [[116, 90, 156, 198, 373, 326], [30, 61, 62, 45, 59, 119], [10, 13, 16, 30, 33, 23]]
+	class_threshold = 0.6 # define the probability threshold for detected objects
+	boxes = list()
+	for i in range(len(yhat)):
+		# decode the output of the network
+		boxes += decode_netout(yhat[i][0], anchors[i], class_threshold, input_h, input_w)
+	correct_yolo_boxes(boxes, image_h, image_w, input_h, input_w)
+	do_nms(boxes, 0.5)
+	labels = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck",
+			  "boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench",
+			  "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe",
+			  "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard",
+			  "sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard",
+			  "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana",
+			  "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake",
+			  "chair", "sofa", "pottedplant", "bed", "diningtable", "toilet", "tvmonitor", "laptop", "mouse",
+			  "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator",
+			  "book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
+	# get the details of the detected objects
+	v_boxes, v_labels, v_scores = get_boxes(boxes, labels, class_threshold)
+	if(len(v_boxes)==0):
+		print("Nothing is recognized")
+	else:
+		# summarize what we found
+		for i in range(len(v_boxes)):
+			pyplot.show()
+			print(v_labels[i], v_scores[i])
+			if (v_labels[i] == "person"):
+				print("Person is recognized, show the GPS info")
+
+	# draw what we found
+	draw_boxes(photo_filename, v_boxes, v_labels, v_scores)
+
+
+# photo_filename = './dataset/000.jpg'
+# # load and prepare image
+# image, image_w, image_h = load_image_pixels(photo_filename, (input_w, input_h))
+# # make prediction
+# yhat = model.predict(image)
+# # summarize the shape of the list of arrays
+# print([a.shape for a in yhat])
+# # define the anchors
+# anchors = [[116,90, 156,198, 373,326], [30,61, 62,45, 59,119], [10,13, 16,30, 33,23]]
+# # define the probability threshold for detected objects
+# class_threshold = 0.6
+# boxes = list()
+# for i in range(len(yhat)):
+# 	# decode the output of the network
+# 	boxes += decode_netout(yhat[i][0], anchors[i], class_threshold, input_h, input_w)
+# # correct the sizes of the bounding boxes for the shape of the image
+# correct_yolo_boxes(boxes, image_h, image_w, input_h, input_w)
+# # suppress non-maximal boxes
+# do_nms(boxes, 0.5)
+# # define the labels
+# labels = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck",
+# 	"boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench",
+# 	"bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe",
+# 	"backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard",
+# 	"sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard",
+# 	"tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana",
+# 	"apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake",
+# 	"chair", "sofa", "pottedplant", "bed", "diningtable", "toilet", "tvmonitor", "laptop", "mouse",
+# 	"remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator",
+# 	"book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
+# # get the details of the detected objects
+# v_boxes, v_labels, v_scores = get_boxes(boxes, labels, class_threshold)
+# # summarize what we found
+# for i in range(len(v_boxes)):
+# 	print(v_labels[i], v_scores[i])
+# 	if(v_labels[i] == "person"):
+# 		print("Person is recognized, show the GPS info")
+# # draw what we found
+# draw_boxes(photo_filename, v_boxes, v_labels, v_scores)
