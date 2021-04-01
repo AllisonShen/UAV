@@ -4,3 +4,5 @@ numpy == 1.19.5
 pillow == 8.1.2
 matplotlib == 3.4.1
 jupyter_http_over_ws == 0.0.8
+pyqt5 == 5.12.1 
+lxml == 4.6.3
