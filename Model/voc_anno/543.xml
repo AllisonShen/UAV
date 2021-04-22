@@ -1,0 +1,26 @@
+<annotation>
+	<folder>yolo_anno</folder>
+	<filename>543.jpg</filename>
+	<path>/Users/allison.xiaxin.shen/Documents/Project/UAV_CV_thermal/UAV/Model/train_image_folder/543.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>6000</width>
+		<height>4000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4775</xmin>
+			<ymin>1027</ymin>
+			<xmax>5228</xmax>
+			<ymax>1854</ymax>
+		</bndbox>
+	</object>
+</annotation>
