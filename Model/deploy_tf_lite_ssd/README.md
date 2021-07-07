@@ -356,5 +356,5 @@ deactivate
 ```
 Remote test
 <p align="center">
-    <img width="100%" src="IMAGES/test_ssd_camera.png" style="max-width:100%;"></a>
+    <img width="100%" src="IMAGES/test_ssd.png" style="max-width:100%;"></a>
 </p>
