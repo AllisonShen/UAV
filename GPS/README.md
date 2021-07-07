@@ -19,7 +19,7 @@ sudo gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock
 ```
 
 
-<del>cgps -s<del\>
+~~cgps -s~~
 
 
 ```
