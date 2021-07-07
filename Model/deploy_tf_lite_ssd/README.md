@@ -40,3 +40,9 @@ python --version
 <p align="center">
     <img width="100%" src="IMAGES/info.png" style="max-width:100%;"></a>
 </p>
+
+Build TensorFlow Lite for ARM boards
+- https://www.tensorflow.org/lite/guide/build_arm
+```
+~~python -m pip install <link to tf lite>~~
+```
