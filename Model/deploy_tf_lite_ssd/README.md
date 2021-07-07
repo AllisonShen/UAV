@@ -75,9 +75,9 @@ select one from all tflite_runtime wheels.
 <p align="center">
     <img width="100%" src="IMAGES/lite_install.png" style="max-width:100%;"></a>
 </p>
+
 ```
 python -m pip install https://github.com/google-coral/pycoral/releases/download/v1.0.1/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
-
 wget https://tfhub.dev/tensorflow/lite-model/ssd_mobilenet_v1/1/metadata/1?lite-format=tflite
 wget https://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -O tflite_ssd.zip
 mkdir -p ~/Projects/Python/tflite/object_detection/coco_ssd_mobilenet_v1
@@ -86,6 +86,7 @@ mv ~/tflite_ssd.zip .
 ls
 unzip tflite_ssd.zip -d coco_ssd_mobilenet_v1
 ```
+
 <p align="center">
     <img width="100%" src="IMAGES/model_download.png" style="max-width:100%;"></a>
 </p>
