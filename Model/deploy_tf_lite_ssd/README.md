@@ -43,6 +43,5 @@ python --version
 
 Build TensorFlow Lite for ARM boards
 - https://www.tensorflow.org/lite/guide/build_arm
-```
-~~python -m pip install <link to tf lite>
-```
+
+<del>python -m pip install </del>
