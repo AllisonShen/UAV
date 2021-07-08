@@ -12,7 +12,10 @@ What is done:
 - [x] Dataset annotation: YOLO
 - [x] Dataset annotation: VOC
 - [x] Utilizing pre-trained model: detection and customized code with GPS info with YOLOv3 tf1
-- [x] Utilizing pre-trained model: detection with SSD using TensorFlow Lite 
+
+In process:
+--------------------
+- [ ] Utilizing pre-trained model: detection with SSD using TensorFlow Lite 
 
 To be continued...
 --------------------
