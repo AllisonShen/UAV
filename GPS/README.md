@@ -1,4 +1,4 @@
-# GPS test
+# GPS sensor setting
 environment setting
 ```
 ls /dev/ttyUSB*
