@@ -3,7 +3,7 @@
 What is done:
 --------------------
 
-- [x] devices list
+- [x] Devices list
 - [x] Raspberry Pi setting
 - [x] GPS sensor setting
 - [x] Extract GPS info from images
@@ -13,7 +13,7 @@ What is done:
 - [x] Dataset annotation: VOC
 - [x] Utilizing pre-trained model: detection and customized code with GPS info with YOLOv3 tf1
 
-In process:
+In progress:
 --------------------
 - [ ] Utilizing pre-trained model: detection with SSD using TensorFlow Lite 
 
