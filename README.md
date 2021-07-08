@@ -23,7 +23,6 @@ To be continued...
 - [ ] Test and evaluate the model
 - [ ] Deploy the model
 - [ ] GPS sensor: data visualization in a user-friendly way
-- [ ] 
 - [ ] Paper writing: overleaf
 
 # Useful links
