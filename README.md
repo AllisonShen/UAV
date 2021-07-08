@@ -19,6 +19,7 @@ In process:
 
 To be continued...
 --------------------
+- [ ] Create paper template and all headings
 - [ ] Create our own dataset
 - [ ] Transfer Learning with ADH dataset based on pre-trained model
 - [ ] Transfer Learning with our own dataset based on pre-trained model
