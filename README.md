@@ -12,16 +12,16 @@ What is done:
 - [x] Dataset annotation: YOLO
 - [x] Dataset annotation: VOC
 - [x] Utilizing pre-trained model: detection and customized code with GPS info with YOLOv3 tf1
+- [x] Utilizing pre-trained model: detection with SSD using TensorFlow Lite 
 
 In progress:
 --------------------
-- [ ] Utilizing pre-trained model: detection with SSD using TensorFlow Lite 
+- [x] Transfer Learning with ADH dataset based on pre-trained model
+
 
 To be continued...
 --------------------
-- [ ] Create paper template and all headings
 - [ ] Create our own dataset
-- [ ] Transfer Learning with ADH dataset based on pre-trained model
 - [ ] Transfer Learning with our own dataset based on pre-trained model
 - [ ] Converting to TensorFlow Lite
 - [ ] Test and evaluate the model
