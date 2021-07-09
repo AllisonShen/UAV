@@ -16,7 +16,7 @@ What is done:
 
 In progress:
 --------------------
-- [] Transfer Learning with ADH dataset based on pre-trained model
+- [ ] Transfer Learning with ADH dataset based on pre-trained model
 
 
 To be continued...
