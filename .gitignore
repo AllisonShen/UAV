@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jupyternotebooks,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,jupyternotebooks,windows
 
@@ -15,6 +16,10 @@ ipython_config.py
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
+=======
+# Created by https://www.toptal.com/developers/gitignore/api/python
+# Edit at https://www.toptal.com/developers/gitignore?templates=python
+>>>>>>> 76666cb5ab8ef3a0e5bd3390b57e340ae438c95f
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -95,8 +100,16 @@ docs/_build/
 target/
 
 # Jupyter Notebook
+<<<<<<< HEAD
 
 # IPython
+=======
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+>>>>>>> 76666cb5ab8ef3a0e5bd3390b57e340ae438c95f
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
@@ -153,6 +166,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+<<<<<<< HEAD
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -196,3 +210,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jupyternotebooks,windows
+=======
+# End of https://www.toptal.com/developers/gitignore/api/python
+>>>>>>> 76666cb5ab8ef3a0e5bd3390b57e340ae438c95f
