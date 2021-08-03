@@ -221,7 +221,7 @@ def _conv_block(inp, convs, skip=True):
 model = make_yolov3_model()
 
 # load the model weights
-weight_reader = WeightReader('yolov3.weights')
+weight_reader = WeightReader('data/yolov3.weights')
 
 # set the model weights into the model
 weight_reader.load_weights(model)
