@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dataset</folder>
+	<filename>038.JPG</filename>
+	<path>/Users/gwak2837/Python/UAV/Model/dataset/038.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5184</width>
+		<height>3456</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1292</xmin>
+			<ymin>1190</ymin>
+			<xmax>1712</xmax>
+			<ymax>2290</ymax>
+		</bndbox>
+	</object>
+</annotation>
