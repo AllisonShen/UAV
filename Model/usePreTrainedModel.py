@@ -219,6 +219,7 @@ def _conv_block(inp, convs, skip=True):
 
 # define the model
 model = make_yolov3_model()
+model.compile(metrics='accuracy')
 
 # load the model weights
 weight_reader = WeightReader('data/yolov3.weights')
