@@ -1,0 +1,26 @@
+<annotation>
+	<folder>resize_img</folder>
+	<filename>0174.JPG</filename>
+	<path>C:\Users\kohaeun\anaconda3\envs\YOLO\UAV\Model\dataset\resize_img\0174.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>320</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>1</difficult>
+		<bndbox>
+			<xmin>287</xmin>
+			<ymin>190</ymin>
+			<xmax>320</xmax>
+			<ymax>282</ymax>
+		</bndbox>
+	</object>
+</annotation>
