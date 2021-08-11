@@ -1,0 +1,26 @@
+<annotation>
+	<folder>resized_InfraredImg</folder>
+	<filename>0170.JPG</filename>
+	<path>C:\Users\kohaeun\anaconda3\envs\YOLO\UAV\Camera_infrared\resized_InfraredImg\0170.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>320</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>222</xmin>
+			<ymin>169</ymin>
+			<xmax>250</xmax>
+			<ymax>279</ymax>
+		</bndbox>
+	</object>
+</annotation>
