@@ -1,0 +1,14 @@
+<annotation>
+	<folder>resized_InfraredImg</folder>
+	<filename>0135.JPG</filename>
+	<path>C:\Users\kohaeun\anaconda3\envs\YOLO\UAV\Camera_infrared\resized_InfraredImg\0135.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>320</width>
+		<height>320</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+</annotation>
