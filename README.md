@@ -13,18 +13,19 @@ What is done:
 - [x] Dataset annotation: VOC
 - [x] Utilizing pre-trained model: detection and customized code with GPS info with YOLOv3 tf1
 - [x] Utilizing pre-trained model: detection with SSD using TensorFlow Lite 
+- [x] Transfer Learning with ADH dataset based on pre-trained model
+- [x] Create our own dataset
+- [x] Transfer Learning with our own dataset based on pre-trained model
+- [x] Test and evaluate the model
 
-In progress:
---------------------
-- [ ] Transfer Learning with ADH dataset based on pre-trained model
+<!-- In progress:
+-------------------- -->
 
 
 To be continued...
 --------------------
-- [ ] Create our own dataset
-- [ ] Transfer Learning with our own dataset based on pre-trained model
+
 - [ ] Converting to TensorFlow Lite
-- [ ] Test and evaluate the model
 - [ ] Deploy the model
 - [ ] GPS sensor: data visualization in a user-friendly way
 - [ ] Paper writing: overleaf
