@@ -94,7 +94,7 @@ def main(_):
     writer.close()
     output_path = os.path.join(os.getcwd(), FLAGS.output_path)
     print('Successfully created the TFRecords: {}'.format(output_path))
-
+    
 
 if __name__ == '__main__':
     tf.app.run()
