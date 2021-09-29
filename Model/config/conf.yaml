@@ -5,6 +5,9 @@ path_daytime_csv_320: '/content/drive/MyDrive/UAV/Model/data/daytimeImg_info.csv
 path_infrared_images_320: '/content/drive/MyDrive/UAV/Camera_infrared/resized_InfraredImg'
 path_infrared_csv_320: '/content/drive/MyDrive/UAV/Model/data/infraredImg_info.csv'
 
+path_mixed_images_320: '/content/drive/MyDrive/UAV/Model/data/images_mixed'
+path_mixed_csv_320: '/content/drive/MyDrive/UAV/Model/data/mixedImg_info.csv'
+
 path_output_daytime_resize: '/content/drive/MyDrive/UAV/Model/output/outputs_daytime_resize'
 path_output_infrared_resize: '/content/drive/MyDrive/UAV/Model/output/outputs_infrared_resize'
 
