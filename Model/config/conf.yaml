@@ -8,6 +8,16 @@ path_infrared_csv_320: '/content/drive/MyDrive/UAV/Model/data/infraredImg_info.c
 path_mixed_images_320: '/content/drive/MyDrive/UAV/Model/data/images_mixed'
 path_mixed_csv_320: '/content/drive/MyDrive/UAV/Model/data/mixedImg_info.csv'
 
+
+yolo_path: /content/drive/MyDrive/UAV/Model/data/yolo_mixed  # dataset root dir
+yolo_train: /content/drive/MyDrive/UAV/Model/data/yolo_mixed/images/train  # train images (relative to 'path') 128 images
+yolo_val: /content/drive/MyDrive/UAV/Model/data/yolo_mixed/images/val  # val images (relative to 'path') 128 images
+yolo_test:  # test images (optional)
+yolo_labels: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed/labels'
+
 path_output_daytime_resize: '/content/drive/MyDrive/UAV/Model/output/outputs_daytime_resize'
 path_output_infrared_resize: '/content/drive/MyDrive/UAV/Model/output/outputs_infrared_resize'
+path_output_yolo_test: '/content/drive/MyDrive/UAV/Model/output/outputs_yolo_test'
+path_output_mixed_resize: '/content/drive/MyDrive/UAV/Model/output/outputs_mixed_resize'
+
 
