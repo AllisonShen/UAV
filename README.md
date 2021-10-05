@@ -20,6 +20,7 @@ What is done:
 
 <!-- In progress:
 -------------------- -->
+- [ ] Paper writing: overleaf
 
 
 To be continued...
@@ -28,7 +29,6 @@ To be continued...
 - [ ] Converting to TensorFlow Lite
 - [ ] Deploy the model
 - [ ] GPS sensor: data visualization in a user-friendly way
-- [ ] Paper writing: overleaf
 
 # Useful links
 - [TensorFlow Lite - Object detection](https://www.tensorflow.org/lite/examples/object_detection/overview#fine-tuning_models_on_custom_data)

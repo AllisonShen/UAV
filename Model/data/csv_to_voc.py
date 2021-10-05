@@ -30,6 +30,8 @@ def read_file(file_path):
             for i in range(4,8):
               if line[i]!='':voc.append(int(float(line[i]))) #xmin, ymin, xmax, ymax
             if len(voc)==5:voc_labels.append(voc)
+            
+        if len(voc_labels)!=0:create_file(voc_prefix,w,h,voc_labels) #make xml file for last image
   
           
             
