@@ -6,8 +6,10 @@ path_infrared_images_320: '/content/drive/MyDrive/UAV/Camera_infrared/resized_In
 path_infrared_csv_320: '/content/drive/MyDrive/UAV/Model/data/infraredImg_info.csv'
 
 path_mixed_images_320: '/content/drive/MyDrive/UAV/Model/data/images_mixed'
-path_mixed_csv_320: '/content/drive/MyDrive/UAV/Model/data/mixedImg_info.csv'
 
+path_mixed_csv_320: '/content/drive/MyDrive/UAV/Model/data/mixedImg_info.csv'
+path_mixed_csv_320_night: '/content/drive/MyDrive/UAV/Model/data/mixedImg_info_night.csv'
+path_mixed_csv_320_daytime: '/content/drive/MyDrive/UAV/Model/data/mixedImg_info_daytime.csv'
 
 yolo_path: /content/drive/MyDrive/UAV/Model/data/yolo_mixed  # dataset root dir
 yolo_train: /content/drive/MyDrive/UAV/Model/data/yolo_mixed/images/train  # train images (relative to 'path') 128 images
@@ -16,6 +18,20 @@ yolo_test:  # test images (optional)
 yolo_labels: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed/labels'
 yolo_labels_train: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed/labels/train'
 yolo_labels_val: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed/labels/val'
+
+yolo_night_path: /content/drive/MyDrive/UAV/Model/data/yolo_mixed_night  # dataset root dir
+yolo_night_train: /content/drive/MyDrive/UAV/Model/data/yolo_mixed_night/images/train  # train images (relative to 'path') 128 images
+yolo_night_val: /content/drive/MyDrive/UAV/Model/data/yolo_mixed_night/images/val  # val images (relative to 'path') 128 images
+yolo_night_test:  # test images (optional)
+yolo_night_labels_train: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed_night/labels/train'
+yolo_night_labels_val: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed_night/labels/val'
+
+yolo_daytime_path: /content/drive/MyDrive/UAV/Model/data/yolo_mixed_daytime  # dataset root dir
+yolo_daytime_train: /content/drive/MyDrive/UAV/Model/data/yolo_mixed_daytime/images/train  # train images (relative to 'path') 128 images
+yolo_daytime_val: /content/drive/MyDrive/UAV/Model/data/yolo_mixed_daytime/images/val  # val images (relative to 'path') 128 images
+yolo_daytime_test:  # test images (optional)
+yolo_daytime_labels_train: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed_daytime/labels/train'
+yolo_daytime_labels_val: '/content/drive/MyDrive/UAV/Model/data/yolo_mixed_daytime/labels/val'
 
 
 path_output_daytime_resize: '/content/drive/MyDrive/UAV/Model/output/outputs_daytime_resize'

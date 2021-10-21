@@ -60,6 +60,9 @@ def create_train_val_csv():
   print(train.head(100))
   print(f"len of test (#rows): {len(test)}")
   print(test.head(100))
+  os.makedirs(FLAGS.path_csv_output, exist_ok=True)
+  os.makedirs(FLAGS.path_csv_output, exist_ok=True)
+
 
 
   filenameTrain = f"{FLAGS.path_csv_output}/train_labels.csv"
