@@ -17,6 +17,8 @@ What is done:
 - [x] Create our own dataset
 - [x] Transfer Learning with our own dataset based on pre-trained model
 - [x] Test and evaluate the model
+- [X] Converting to TensorFlow Lite
+- [X] Deploy the model
 
 <!-- In progress:
 -------------------- -->
@@ -26,8 +28,6 @@ What is done:
 To be continued...
 --------------------
 
-- [ ] Converting to TensorFlow Lite
-- [ ] Deploy the model
 - [ ] GPS sensor: data visualization in a user-friendly way
 
 # Useful links
